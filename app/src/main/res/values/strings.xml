@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AnimatorDemo</string>
+    <string name="strTranslation">位移</string>
+    <string name="strAlpha">透明度</string>
+    <string name="strScale">缩放</string>
+    <string name="strRotate">旋转</string>
+    <string name="btnCombine">组合</string>
+</resources>

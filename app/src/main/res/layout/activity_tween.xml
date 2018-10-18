@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.manu.animatordemo.samples.TweenAnimationActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/btnTranslation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="@string/strTranslation"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintEnd_toStartOf="@id/btnScale"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAlpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="@string/strAlpha"
+        app:layout_constraintBottom_toBottomOf="@+id/btnRotate"
+        app:layout_constraintEnd_toStartOf="@id/btnCombine"
+        app:layout_constraintStart_toEndOf="@id/btnRotate"
+        app:layout_constraintTop_toTopOf="@+id/btnRotate" />
+
+    <Button
+        android:id="@+id/btnScale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="@string/strScale"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTranslation"
+        app:layout_constraintEnd_toStartOf="@id/btnRotate"
+        app:layout_constraintStart_toEndOf="@id/btnTranslation"
+        app:layout_constraintTop_toTopOf="@+id/btnTranslation" />
+
+    <Button
+        android:id="@+id/btnRotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="@string/strRotate"
+        app:layout_constraintBottom_toBottomOf="@+id/btnScale"
+        app:layout_constraintEnd_toStartOf="@id/btnAlpha"
+        app:layout_constraintStart_toEndOf="@id/btnScale"
+        app:layout_constraintTop_toTopOf="@+id/btnScale" />
+
+    <Button
+        android:id="@+id/btnCombine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="@string/btnCombine"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAlpha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnAlpha"
+        app:layout_constraintTop_toTopOf="@+id/btnAlpha" />
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/ic_launcher_background"/>
+
+</android.support.constraint.ConstraintLayout>

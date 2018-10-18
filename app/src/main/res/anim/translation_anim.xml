@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="1200"
+    android:startOffset ="0"
+    android:fillBefore = "true"
+    android:fillAfter = "false"
+    android:fillEnabled= "false"
+    android:repeatMode = "reverse"
+    android:repeatCount = "5"
+    android:interpolator = "@android:anim/accelerate_interpolator"
+
+    android:fromXDelta="0"
+    android:fromYDelta="0"
+    android:toXDelta="100"
+    android:toYDelta="100">
+
+<!--&lt;!&ndash;动画开始的延时&ndash;&gt;-->
+<!--android:startOffset ="1000"-->
+<!--&lt;!&ndash;动画播放完是否回到动画开始的位置，默认true，如果fillBefore设置为false,动画不会停留在结束位置，不知道是不是bug&ndash;&gt;-->
+<!--android:fillBefore = "true"-->
+<!--&lt;!&ndash;动画播放完之后是否回到动画结束的位置，默认false,如果fillAfter设置为true,动画则会停留在结束位置&ndash;&gt;-->
+<!--android:fillAfter = "false"-->
+<!--&lt;!&ndash;设置fill...属性是否启用，对fillAfter无效&ndash;&gt;-->
+<!--android:fillEnabled= "true"-->
+<!--&lt;!&ndash;设置动画重复模式,restart为重新播放，reverse为倒序回放，和repeatCount搭配使用&ndash;&gt;-->
+<!--android:repeatMode = "restart"-->
+<!--&lt;!&ndash;设置动画重复次数&ndash;&gt;-->
+<!--android:repeatCount = "0"-->
+<!--&lt;!&ndash;设置动画插值器，这里的插值器是动画开始速度较慢，后面加速&ndash;&gt;-->
+<!--android:interpolator = "@android:anim/accelerate_interpolator"-->
+</translate>
